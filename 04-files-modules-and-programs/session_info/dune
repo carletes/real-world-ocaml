@@ -1,0 +1,3 @@
+(library
+  (name session_info)
+  (libraries base core))
