@@ -19,6 +19,7 @@ pkgs.mkShell {
     core_extended
     cryptokit
     menhir
+    ppx_jane
     yojson
 
     # Not available on nixpkgs, apparently:

@@ -27,3 +27,16 @@ type session_info = {
 }
 
 let sessions_have_same_user s1 s2 = Username.( = ) s1.user s2.user
+
+let%test "eq" =
+  sessions_have_same_user
+    {
+      user = Username.of_string "carlos";
+      host = Hostname.of_string "here";
+      when_started = Time.now ();
+    }
+    {
+      user = Username.of_string "carlos";
+      host = Hostname.of_string "there";
+      when_started = Time.now ();
+    }
