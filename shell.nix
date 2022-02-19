@@ -9,7 +9,6 @@ pkgs.mkShell {
     findlib
     ocaml
     ocaml-lsp
-    ocp-indent
     utop
 
     async
